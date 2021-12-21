@@ -1,6 +1,41 @@
-# Welcome to Remix!
+# Welcome to our Remix Blog!
 
-- [Remix Docs](https://remix.run/docs)
+This is a fullstack project using Remix, Prisma, SQLite, where we create a blog that a user can register/login to create/delete posts.
+
+## File Structure
+
+```text
+src/
+├── app/
+│   ├── routes/
+│   │   ├── auth/
+│   │   │   ├── login.jsx
+│   │   │   └── logout.jsx
+│   │   ├── posts/
+│   │   │   ├── $postId.jsx
+│   │   │   ├── index.jsx
+│   │   │   └── new.jsx
+│   │   ├── index.jsx
+│   │   └── post.jsx
+│   ├── styles/
+│   │   └── globals.css
+│   ├── utils/
+│   │   ├── db.server.ts
+│   │   └── session.server.ts
+│   ├── entry.client.jsx
+│   ├── entry.server.jsx
+│   └── root.jsx
+├── prisma/
+│   ├── dev.db
+│   ├── schema.prisma
+│   └── seed.js
+├── .env
+├── jsconfig.json
+├── package.lock.json
+├── package.json
+├── README.md
+└── remix.config.js
+```
 
 ## Development
 
